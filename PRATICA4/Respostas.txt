@@ -1,0 +1,56 @@
+﻿Respostas da prática 4 (parte 3) 
+João Pedro Clemente Borges (Matrícula 95654)
+
+
+1) A resposta correta quanto a ordem de complexidade desses operadores e funções é O(n). O tempo de execução que esses métodos e sobrecargas tomam na execução do programa é diretamente proporcional ao tamanho do conjunto (vetor de elementos). Conforme o conjunto se torna maior, o tempo de execução aumenta, pois as operações básicas consistem em comparações ao longo de todo vetor. É válido, porém, citar que esses valores podem oscilar para mais ou para menos de O(n) nos operadores +, * e - dependendo de quais valores estão nos conjuntos e como estão ordenados, o que pode aumentar o número de comparações e inserções.
+
+
+2) A ordem de complexidade pode sim mudar pois dependendo da ordem dos elementos. Dependendo de como os vetores são ordenados e a quantidade de números diferentes, é realizado um número de comparações (função pertence) e inserções (função insere) se comparado ao melhor caso.
+
+
+3) Apenas tempo “real” usando o comando time:
+Saída para n = 10: 0m0,005s
+Saída para n = 100: 0m0,007s
+Saída para n = 1000: 0m0,032s
+Saída para n = 5000: 0m0,149s
+Saída para n = 10000: 0m0,462s
+Saída para n = 20000: 0m2,236s
+Saída para n = 40000: 0m9,256s
+
+
+4) Apenas tempo “real” usando o comando time:
+Saída para n = 10: 0m0,006s
+Saída para n = 100: 0m0,007s
+Saída para n = 1000: 0m0,049s
+Saída para n = 5000: 0m0,207s
+Saída para n = 10000: 0m0,848s
+Saída para n = 20000: 0m3,455s
+Saída para n = 40000: 0m13,939s
+
+
+Comentário: Houve um aumento significativo se comparado ao primeiro exercício (p31.cpp); o aumento se dá devido ao número de comparações e inserções extremamente maior no conjunto C visto que ele possuirá uma quantidade de elementos equivalente ao dobro da quantidade do conjunto C da questão anterior (visto que o conjunto B é um espelhamento negativo de A).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5) Apenas tempo “real” usando o comando time com a flag -O3:
+Saída para n = 10: 0m0,005s
+Saída para n = 100: 0m0,006s
+Saída para n = 1000: 0m0,036s
+Saída para n = 5000: 0m0,102s
+Saída para n = 10000: 0m0,226s
+Saída para n = 20000: 0m0,887s
+Saída para n = 40000: 0m3,441s
+
+
+Comentário: Houve uma redução extremamente visível usando a flag de otimização. Os tempos reduziram cerca de 4 vezes nos tempos mais significativos, o que é bastante satisfatório principalmente a medida que o valor de n aumenta.
