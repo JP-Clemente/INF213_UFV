@@ -53,6 +53,9 @@ public:
 	void empty() const {return size() == 0;};
 	int size() const {return dataSize;};
 
+	//funções extras (etapas 2 e 3):
+	int eraseMatchingElements(const T &); //detecta no vetor os elementos a serem deletados e chama a função organizeDeletions
+	void sortedInsert(const T &);
 private:
 	T *data; //declare o membro de dados data, que devera armazenar os elementos da lista
 	int dataSize; //quantos elementos ha na lista?
@@ -61,7 +64,47 @@ private:
 	void create();
 	void destroy();
 	void resizeCapacity(int newCapacity);
+    void organizeDeletions(const int); //função para dar suporte a função eraseMatchingElements, ela deleta elementos e organiza o vetor
 };
+
+template<class T>
+void MyVec<T>::organizeDeletions(const int pos){
+	for(int i=pos; i<dataSize-1; i++){
+		data[i] = data[i+1];
+	}
+}
+
+
+/*Resposta do exercício: A complexidade é O(dataSize^2). É possível melhorar dependendo da implementação para organizar apenas uma vez o vetor, memorizando
+as posições a serem deletadas ou realizando algum processo para diminuir o número de leituras do vetor e comparações*/
+template<class T>
+int MyVec<T>::eraseMatchingElements(const T &elem){
+	int delCount = 0;
+	for(int i=0; i<dataSize-delCount; i++){
+		if(data[i] == elem){
+			organizeDeletions(i);
+			delCount++;
+			i--;
+		}
+	}
+	dataSize = dataSize - delCount;
+	return delCount;
+}
+
+template<class T>
+void MyVec<T>::sortedInsert(const T &elem){
+	bool inserted = false;
+	for(int i=0; i<dataSize; i++){
+		if(elem<data[i]){
+			insert(elem, i);
+			inserted = true;
+			break;
+		}
+	}
+	if(!inserted){
+		insert(elem, dataSize);
+	}
+}
 
 template<class T>
 void MyVec<T>::push_back(const T& elem) {
@@ -118,7 +161,6 @@ void MyVec<T>::clear() {
 	destroy();
 	create();
 }
-
 
 template<class T>
 void MyVec<T>::resizeCapacity(int newCapacity) {

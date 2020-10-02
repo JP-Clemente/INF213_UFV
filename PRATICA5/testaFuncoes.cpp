@@ -40,7 +40,6 @@ int main() {
 		cin >> size >> calls;
 		v.resize(size);
 		for(int i=0;i<size;i++) cin >> v[i]; // le os "size" elementos do vetor...
-
 		printVector(v);	
 		for(int i=0;i<calls;i++) {
 			string elemRemover;
@@ -52,7 +51,7 @@ int main() {
 			printVector(v);
 			cout << endl;
 		}
-	} else { //testes com funcao sortedInsert
+	}   else { //testes com funcao sortedInsert
 		int size;
 		cin >> size;
 		for(int i=0;i<size;i++) {
@@ -64,4 +63,5 @@ int main() {
 			printVector(v);
 		}
 	}
+	return 0;
 }
