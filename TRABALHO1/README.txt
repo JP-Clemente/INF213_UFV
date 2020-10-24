@@ -1,10 +1,5 @@
-﻿EU LI AS REGRAS
-
-
 Nome: João Pedro Clemente Borges
 Matrícula: 95654
-
-
 
 
 1 - EXPERIMENTOS REALIZADOS COM A CLASSE MyMatrix.h UTILIZANDO O CÓDIGO Benchmark.cpp:
@@ -35,20 +30,15 @@ Seguem as observações:
 - Seguem alguns casos testes mais relevantes que foram feitos para levar as observações acima:
 TESTES PARA MATRIZES QUADRADAS (Parâmetros iguais):
 
-
-
-
 * Para dimensões 10x10: 
 
-
-            Experimentos com matriz tradicional:
+Experimentos com matriz tradicional:
 Tempo para criar matriz      : 0.000003
 Tempo para inicializar matriz: 0.000002
 Tempo para somar matriz      : 0.000002
 Tempo para dobrar o número de colunas na primeira linha      : 0.000005
 Tempo para deletar matriz    : 0.000002
 Soma: 39
-
 
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000001
@@ -61,15 +51,13 @@ Soma: 39
 
 * Para dimensões 100x100:
 
-
-            Experimentos com matriz tradicional: 
+Experimentos com matriz tradicional: 
 Tempo para criar matriz      : 0.000060
 Tempo para inicializar matriz: 0.000186
 Tempo para somar matriz      : 0.000135
 Tempo para dobrar o número de colunas na primeira linha      : 0.000011
 Tempo para deletar matriz    : 0.000010
 Soma: 5003
-
 
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000015
@@ -80,18 +68,7 @@ Tempo para deletar matriz    : 0.000020
 Soma: 5003
 
 
-
-
-
-
-
-
-
-
-
-
 * Para dimensões 1000x1000:
-
 
 Experimentos com matriz tradicional: 
 Tempo para criar matriz      : 0.001844
@@ -101,7 +78,6 @@ Tempo para dobrar o número de colunas na primeira linha      : 0.000035
 Tempo para deletar matriz    : 0.000125
 Soma: 493952
 
-
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000045
 Tempo para inicializar matriz: 0.006680
@@ -110,10 +86,7 @@ Tempo para dobrar o número de colunas na primeira linha      : 0.005276
 Tempo para deletar matriz    : 0.000122,  Soma: 493952
 
 
-
-
 * Para dimensões 5000x5000:
-
 
 Experimentos com matriz tradicional: 
 Tempo para criar matriz      : 0.010199
@@ -122,7 +95,6 @@ Tempo para somar matriz      : 0.067810
 Tempo para dobrar o número de colunas na primeira linha      : 0.000042
 Tempo para deletar matriz    : 0.000435
 Soma: 12459419
-
 
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000049
@@ -133,20 +105,7 @@ Tempo para deletar matriz    : 0.001386
 Soma: 12459419
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 * Para dimensões 10000x10000:
-
 
 Experimentos com matriz tradicional: 
 Tempo para criar matriz      : 0.048848
@@ -155,7 +114,6 @@ Tempo para somar matriz      : 0.271433
 Tempo para dobrar o número de colunas na primeira linha      : 0.000109
 Tempo para deletar matriz    : 0.001013
 Soma: 50463693
-
 
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000091
@@ -166,12 +124,7 @@ Tempo para deletar matriz    : 0.005437
 Soma: 50463693
 
 
-
-
-
-
 * Para dimensões 20000x20000: 
-
 
 Experimentos com matriz tradicional: 
 Tempo para criar matriz      : 0.059429
@@ -180,7 +133,6 @@ Tempo para somar matriz      : 1.170906
 Tempo para dobrar o número de colunas na primeira linha      : 0.000266
 Tempo para deletar matriz    : 0.002373
 Soma: 200649594
-
 
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000197
@@ -192,22 +144,9 @@ Soma: 200649594
 
 
 
-
-
-
-
-
-
-
-
-
 TESTES RELEVANTES PARA MATRIZES NÃO QUADRADAS (Parâmetros diferentes):
 
-
-
-
 * Para dimensões 1x20000
-
 
 Experimentos com matriz tradicional: 
 Tempo para criar matriz      : 0.000013
@@ -216,7 +155,6 @@ Tempo para somar matriz      : 0.000539
 Tempo para dobrar o número de colunas na primeira linha      : 0.000835
 Tempo para deletar matriz    : 0.000032
 Soma: 19174
-
 
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000001
@@ -227,10 +165,7 @@ Tempo para deletar matriz    : 0.000035
 Soma: 19174
 
 
-
-
 * Para dimensões 20000x1:
-
 
 Experimentos com matriz tradicional: 
 Tempo para criar matriz      : 0.002479
@@ -240,7 +175,6 @@ Tempo para dobrar o número de colunas na primeira linha      : 0.000012
 Tempo para deletar matriz    : 0.001844
 Soma: 9887
 
-
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000287
 Tempo para inicializar matriz: 0.001548
@@ -248,12 +182,6 @@ Tempo para somar matriz      : 0.001203
 Tempo para dobrar o número de colunas na primeira linha      : 0.000449
 Tempo para deletar matriz    : 0.000001
 Soma: 9887
-
-
-
-
-
-
 
 
 * Para dimensões 20000x0:
@@ -265,7 +193,6 @@ Tempo para dobrar o número de colunas na primeira linha      : 0.000001
 Tempo para deletar matriz    : 0.000282
 Soma: 0
 
-
 Experimentos com matriz no formato ragged: 
 Tempo para criar matriz      : 0.000527
 Tempo para inicializar matriz: 0.000928
@@ -274,15 +201,10 @@ Tempo para dobrar o número de colunas na primeira linha      : 0.000001
 Tempo para deletar matriz    : 0.000002
 Soma: 0
 
-
-
-
 - Conclusão: O tipo de matriz que é melhor de se utilizar depende das operações que serão realizadas com a classe. Por exemplo, seria mais vantajoso utilizar uma matriz Ragged caso não fosse necessário dobrar as linhas, pois o tempo de criação de uma matriz ragged é extremamente inferior ao de uma tradicional. Porém, sendo necessário, como é extremamente maior o tempo para dobrar o tamanho da linha, caso seja necessária essa operação, é mais vantajoso trabalhar com matrizes tradicionais, que demoram uma quantidade de tempo bem menor. Cabe ao usuário da classe decidir a melhor forma de armazenar as suas matrizes. Vale citar que mesmo em algumas situações sem operações que demandem o redimensionamento da matriz ragged, ainda sim pode ser mais vantajoso usar as tradicionais visto que o tempo de inicialização da matriz ragged é maior, e que aleatoriedades quanto ao número de colunas de cada linha podem afetar o desempenho favorecendo um tipo de matriz em relação ao outro. 
  
 1.1 - GRÁFICOS:
 Visando ilustrar de forma simples o que foi concluído, dois esboços gráficos foram realizados com o objetivo de mostrar brevemente a diferença de desempenho. O eixo X do gráfico apresenta a variação nos parâmetros (ambos parâmetros são iguais), e o eixo Y apresenta o tempo em segundos. Estes esboços podem ser consultados neste link: https://drive.google.com/file/d/1Fkhhr0drqjav4G2gkVPiGzsreVpH7F8N/view
-
-
 
 
 2 - Consulta utilizada para o trabalho:
