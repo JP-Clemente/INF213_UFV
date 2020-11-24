@@ -8,5 +8,6 @@
 - Inheritance
 - Polymorphism
 - All types of lists, stacks and queues
+- Iterators
 - Trees and maps
 
