@@ -1,6 +1,6 @@
 # DATA STRUCTURES
 
-## Here you'll find projects containing:
+## Here you'll find exercises containing:
 
 - Objected oriented programming
 - Pointers
@@ -10,4 +10,5 @@
 - All types of lists, stacks and queues
 - Iterators
 - Trees and maps
+- Hashing 
 
